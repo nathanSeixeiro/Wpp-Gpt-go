@@ -59,7 +59,7 @@ func generateGPTText(query string) (string, error) {
 	request, err := http.NewRequest("POST", "https://api.openai.com/v1/chat/completions", bytes.NewBuffer(reqJson))
 
 	request.Header.Set("Content-Type", "application/json")
-	request.Header.Set("Authorization", "Bearer YOUR_API_KEY")
+	request.Header.Set("Authorization", "Bearer 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")
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
