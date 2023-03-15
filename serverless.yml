@@ -42,7 +42,7 @@ package:
     - ./bin/**
 
 functions:
-  chat:
+  chat: 
     handler: bin/zapgpt
     events:
       - httpApi:
